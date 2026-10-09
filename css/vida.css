@@ -1,0 +1,37 @@
+/* ==========================================================================
+   ESTILOS PERSONALIZADOS DE GALERÍA EDITORIAL - VIDA.CSS
+   ========================================================================== */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #090807;
+}
+::-webkit-scrollbar-thumb {
+    background: #2a201a;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a81c1c;
+}
+
+.bg-grain {
+    background-image: radial-gradient(rgba(214, 36, 36, 0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+}
+
+.img-editorial {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+    filter: contrast(1.08) brightness(0.92) sepia(0.15);
+}
+.img-editorial:hover {
+    transform: scale(1.02);
+    filter: contrast(1.15) brightness(1) sepia(0);
+}
+
+.filter-btn.active {
+    background-color: #090807 !important;
+    color: #e8e2d8 !important;
+    border-color: #090807 !important;
+}
